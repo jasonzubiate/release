@@ -8,6 +8,7 @@ export default function Home() {
         autoPlay
         muted
         loop
+        playsInline
         className="absolute w-screen h-screen object-cover"
       ></video>
 
@@ -21,7 +22,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col gap-2 mb-12">
+        <div className="flex flex-col gap-2 mb-6">
           <h1 className="text-[clamp(20px,8vw,100px)] font-bold tracking-tight leading-none">
             Can&apos;t Decide
           </h1>
@@ -30,7 +31,9 @@ export default function Home() {
           </p>
         </div>
 
-        <p className="text-zinc-300 text-sm">Powered by release.tv</p>
+        <button className="w-full rounded-full py-4 bg-zinc-200/10 text-zinc-50 font-semibold uppercase border border-zinc-200/10 hover:bg-zinc-200/20 transition-colors duration-300 cursor-pointer">
+          Pre-Save
+        </button>
       </div>
     </main>
   );
